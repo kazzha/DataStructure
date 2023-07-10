@@ -29,7 +29,7 @@ void PrintQueue(Queue& queue)
 {
 	int i = queue.head;
 
-	if (queue.head == queue.tail)
+	if (queue.head > queue.tail)
 	{
 		std::cout << "Empty" << std::endl;
 		return;
@@ -46,7 +46,7 @@ void PrintQueue(Queue& queue)
 
 void DeQueue(Queue& queue)
 {
-	if (queue.head == queue.tail)
+	if (queue.head > queue.tail)
 	{
 		std::cout << "QUEUE is already EMPTY" << std::endl;
 		return;
