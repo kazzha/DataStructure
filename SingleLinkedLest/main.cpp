@@ -10,4 +10,7 @@ int main()
 	CreateMonster(myList, "Slime", 10);
 
 	PrintMonstersDQ(myList.pHead);
+
+	DeleteAll(myList);
+	PrintMonsters(myList);
 }
